@@ -76,7 +76,7 @@ public class StudentController {
 		}
 		}
 	
-	@PostMapping("/addS")
+	@PostMapping("/add")
 	public ResponseEntity<Student> addS(@RequestBody Student student) {
 		studentService.add(student);
 		return ResponseEntity.ok(studentService.get(student.getId()));
